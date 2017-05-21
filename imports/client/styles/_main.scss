@@ -1,0 +1,50 @@
+/*this file is referred to as a "partial", convention dictates we preface the filename with an underscore. */
+
+$green: #e4ede0;
+$green-alt: darken($green, 15%);
+
+$blue: #dfe7ed;
+$blue-alt: darken($blue, 15%);
+
+$red: #eddfdf;
+$red-alt: darken($red, 15%);
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size:62.5%;
+    /*62.5% of default font value (default value is 16.5 pixels), = 10pt font */
+}
+
+
+body{
+    background: #f2f2f2;
+    color:#555555;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-weight:300;
+    font-size: 2.4rem;
+    /*REM is relative: based on font size of html element */
+}
+
+input, button, select{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+//order of import is important
+@import './components/title-bar';
+@import './components/wrapper';
+@import './components/item';
+@import './components/button';
+@import './components/form';
+@import './components/player';
